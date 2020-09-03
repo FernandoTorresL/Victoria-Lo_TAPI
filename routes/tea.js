@@ -12,9 +12,9 @@ router.get('/tea', teaController.getAllTea);
 router.delete('/tea', teaController.deleteAllTea);
 router.post('/tea', teaController.newTea);
 
-router.get('/tea/:id', teaController.getOneTea);
-router.post('/tea/:id', teaController.newComment);
-router.delete('/tea/:id', teaController.deleteOneTea);
+router.get('/tea/:name', teaController.getOneTea);
+router.post('/tea/:name', teaController.newComment);
+router.delete('/tea/:name', teaController.deleteOneTea);
 
 // 4.Export the route to use in our server.js
 module.exports = router; // export to use in server.js

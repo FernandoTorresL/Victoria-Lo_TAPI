@@ -9,10 +9,15 @@ app.use(express.json());
 
 app.use('/', routes); // to use the routes
 
+app.use('/uploads', express.static('./uploads'));
+
 //establish connection to database
 mongoose.connect(
   process.env.MONGODB_URI,
-  { useFindAndModify: false,useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true},
+  { useFindAndModify: false,
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useCreateIndex: true},
   function (err) {
       if (err) return console.log("Error: ", err);
       console.log("MongoDB Connection -- Ready state is:", mongoose.connection.readyState);

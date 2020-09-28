@@ -24,8 +24,10 @@
   },
   "homepage": "https://github.com/FernandoTorresL/Victoria-Lo_TAPI#readme",
   "dependencies": {
+    "compression": "^1.7.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "helmet": "^4.1.1",
     "mongoose": "^5.10.7",
     "multer": "^1.4.2"
   }

@@ -10,7 +10,7 @@ const teaController = require('../controllers/tea');
 
 router.get('/tea', teaController.getAllTea);
 router.delete('/tea', teaController.deleteAllTea);
-router.post('/tea', teaController.newTea);
+router.post('/tea', teaController.uploadImg, teaController.newTea);
 
 router.get('/tea/:name', teaController.getOneTea);
 router.post('/tea/:name', teaController.newComment);
